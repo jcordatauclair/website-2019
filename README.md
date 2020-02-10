@@ -32,45 +32,28 @@ I used **HTML & CSS**, **JavaScript**, **Bootstrap** and **PHP** to allow users 
 
 ## **Screenshots**
 
-**Responsive** :
-<p align="center">
-  <img src="screenshots/responsive.gif">
-</p>
+**Homepage**:
 
-**Homepage** :
-
-- *desktop* :
+- *desktop*:
 <p align="center">
   <img src="screenshots/homepage.png">
 </p>
 
-- *mobile* :
+- *mobile*:
 <p align="center">
   <img src="screenshots/homepage_mobile.png">
 </p>
 
-**Blog** :
+**About**:
 
-- *desktop* :
-<p align="center">
-  <img src="screenshots/blog.png">
-</p>
-
-- *mobile* :
-<p align="center">
-  <img src="screenshots/blog_mobile.png">
-</p>
-
-**About** :
-
-- *desktop* :
 <p align="center">
   <img src="screenshots/about.png">
 </p>
 
-- *mobile* :
+**Mobile menu**:
+
 <p align="center">
-  <img src="screenshots/about_mobile.png">
+  <img src="screenshots/menu_mobile.gif">
 </p>
 
 
