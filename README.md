@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <img src="screenshots/homescreen.mp4">
+  <img src="screenshots/homescreen.gif">
 </p>
 
 
