@@ -1,0 +1,462 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  color: white;
+  background-color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  overflow: hidden;
+}
+
+body {
+  opacity: 0;
+}
+
+.background-img {
+  /* background-color: #1b1b1b; */
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/bg-0.jpg");
+  /* background-image: url("../images/bg-0.jpg"); */
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s ease;
+}
+
+.preload-img {
+  display: none;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  font-weight: 200;
+  text-align: right;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 200;
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  opacity: 0.85;
+  transition: 0.3s;
+}
+
+.text-link {
+  text-decoration: underline;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.logo-j {
+  font-family: 'Satisfy', cursive;
+  font-size: 64px;
+  color: white;
+}
+
+.logo {
+  display: block;
+  position: fixed;
+  top: 4vh;
+  left: 4vw;
+  image-rendering: smooth;
+}
+
+.work-link {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 4vh;
+}
+
+.social-media-icons {
+  display: block;
+  float: right;
+  margin: 4vh 4vw;
+  text-align: center;
+}
+
+.fab {
+  font-size: 23px;
+  margin: 10px 0;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+}
+
+.contact-link {
+  display: block;
+  position: fixed;
+  bottom: 25vh;
+  right: 4vw;
+}
+
+canvas {
+  position: fixed;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  right: 4vw;
+  bottom: 4vh;
+  margin: auto;
+}
+
+.chevrons {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 94vh;
+}
+
+.chevrons i {
+  opacity: 0;
+  margin: 0 0;
+  cursor: pointer;
+}
+
+.chevrons i:hover {
+  opacity: 0.85;
+  transition: 0.3s;
+}
+
+.prev-img, .next-img {
+  font-size: 16px;
+}
+
+.copyright {
+  display: block;
+  position: fixed;
+  bottom: 4vh;
+  left: 4vw;
+}
+
+.copyright p {
+  font-size: 10px;
+}
+
+.about-link {
+  display: block;
+  position: fixed;
+  bottom: 50vh;
+  left: 4vw;
+  transform: rotate(-180deg);
+}
+
+.index-main-text {
+  display: block;
+  position: fixed;
+  float: right;
+  width: 50%;
+  top: 22vh;
+  right: 15vw;
+}
+
+.hi, .i-am-julien, .presentation {
+  opacity: 0;
+}
+
+.my-resume {
+  opacity: 0;
+}
+
+.button {
+  display: block;
+  float: right;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  padding: 18px 36px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  font-size: 13px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.85;
+  transition: 0.3s;
+}
+
+.button-resume {
+  display: block;
+  position: fixed;
+  bottom: 50vh;
+  left: 20vw;
+}
+
+.about-main-text {
+  display: block;
+  position: fixed;
+  float: left;
+  margin: 0 35vw;
+  padding: 32px;
+  top: 12vh;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.about-main-text p {
+  font-size: 18px;
+}
+
+.work-main-text {
+  width: 65%;
+  margin: 0 auto;
+  margin-top: -66vh;
+}
+
+.work-main-text p {
+  text-align: center;
+  margin: 50px;
+}
+
+.lighten {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.burger-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Mobile Styles */
+@media only screen and (max-width: 425px) {
+  .lighten {
+    display: block;
+  }
+
+  .burger-menu-icon {
+    display: block;
+    position: fixed;
+    top: 34px;
+    right: 34px;
+  }
+
+  .burger-menu-icon i {
+    cursor: pointer;
+  }
+
+  .fa-bars {
+    font-size: 32px;
+  }
+
+  .mobile-menu {
+    display: block;
+    top: -280px;
+    position: absolute;
+    height: 280px;
+    width: 100%;
+    background-color: white;
+    z-index: 99;
+  }
+
+  .cross-menu-icon {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 34px;
+    right: 34px;
+  }
+
+  .cross-menu-icon i {
+    cursor: pointer;
+  }
+
+  .fa-times {
+    font-size: 32px;
+    color: #1b1b1b;
+  }
+
+  .mobile-social-media-icons {
+    position: relative;
+    text-align: center;
+    top: 230px;
+  }
+
+  .mobile-social-media-icons i {
+    color: #1b1b1b;
+    font-size: 6vw;
+    margin: 0 12px;
+  }
+
+  .mobile-work-link {
+    position: relative;
+    text-align: center;
+    width: 30%;
+    top: 20px;
+    margin: 0 auto;
+  }
+
+  .mobile-about-link {
+    position: relative;
+    text-align: center;
+    width: 30%;
+    top: 60px;
+    margin: 0 auto;
+  }
+
+  .mobile-contact-link {
+    position: relative;
+    text-align: center;
+    width: 30%;
+    top: 100px;
+    margin: 0 auto;
+  }
+
+  .mobile-menu a {
+    color: #1b1b1b;
+    font-size: 4vw;
+  }
+
+  .logo {
+    left: 42px;
+    top: 12px;
+  }
+
+  .work-link {
+    display: none;
+  }
+
+  .social-media-icons {
+    display: none;
+  }
+
+  .contact-link {
+    display: none;
+  }
+
+  canvas {
+    display: none;
+  }
+
+  .chevrons {
+    bottom: 1vh;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .copyright p {
+    font-size: 1.2vw;
+  }
+
+  .about-link {
+    display: none;
+  }
+
+  .about-main-text {
+    margin: 40px 10vw;
+  }
+
+  .about-main-text p {
+    font-size: 3.7vw;
+  }
+
+  .work-main-text {
+    width: 80%;
+  }
+
+  .work-main-text p {
+    margin: 50px;
+  }
+
+  .index-main-text {
+    top: 20vh;
+    width: 70%;
+  }
+
+  .text h1 {
+    font-size: 22px;
+  }
+
+  .button {
+    padding: 18px 36px;
+    font-size: 13px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 426px) and (max-width: 1024px) {
+  .burger-menu-icon {
+    display: none;
+  }
+
+  .logo {
+    left: 8vw;
+  }
+
+  .work-link {
+    top: 2vh;
+  }
+
+  .social-media-icons {
+    margin: 5vh 8vw;
+  }
+
+  .contact-link {
+    right: 8vw;
+  }
+
+  canvas {
+    right: 8vw;
+    bottom: 5vh;
+  }
+
+  .chevrons {
+    bottom: 1vh;
+  }
+
+  .copyright {
+    bottom: 5vh;
+    left: 8vw;
+  }
+
+  .copyright p {
+    font-size: 1.2vw;
+  }
+
+  .about-link {
+    left: 8vw;
+  }
+
+  .index-main-text {
+    right: 20vw;
+    top: 15vh;
+  }
+
+  .about-main-text {
+    margin: 0 22vw;
+  }
+
+  .about-main-text p {
+    font-size: 15px;
+  }
+}

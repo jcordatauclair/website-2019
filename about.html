@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Playfair+Display|Satisfy&display=swap">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/836/simplex-noise.min.js"></script>
+  <script src="javascript/myscripts.js"></script>
+</head>
+
+<body>
+  <!-- Preload the images to avoid white flash while loading -->
+  <div class="preload-img">
+    <img src="images/bg-0.jpg" />
+    <img src="images/bg-1.jpg" />
+    <img src="images/bg-2.jpg" />
+    <img src="images/bg-3.jpg" />
+    <img src="images/bg-4.jpg" />
+    <img src="images/bg-5.jpg" />
+    <img src="images/bg-6.jpg" />
+  </div>
+  <!-- Darken content when mobile menu is open -->
+  <div class="lighten"></div>
+  <!-- Menu -->
+  <div class="mobile-menu">
+    <div class="cross-menu-icon">
+      <i class="fas fa-times close-menu-icon"></i>
+    </div>
+    <!-- Social media icons -->
+    <div class="mobile-social-media-icons">
+      <a target="_blank" href="https://www.linkedin.com/in/jcordatauclair/"><i class="fab fa-linkedin"></i></a>
+      <a target="_blank" href="https://github.com/jcordatauclair"><i class="fab fa-github"></i></a>
+      <a target="_blank" href="https://dribbble.com/jcordatauclair"><i class="fab fa-dribbble"></i></a>
+      <a target="_blank" href="https://www.youtube.com/channel/UCEmwAvWTayy-B8eYByihLEw"><i class="fab fa-youtube"></i></a>
+      <a target="_blank" href="https://www.instagram.com/julek.ca"><i class="fab fa-instagram"></i></a>
+      <a target="_blank" href="https://open.spotify.com/user/julien.c-a?si=30e9vThZTFula8sv3SBMxA"><i class="fab fa-spotify"></i></a>
+    </div>
+    <!-- Link redirecting to the "work" page -->
+    <div class="mobile-work-link">
+      <h3><a href="work.html">WORK</a></h3>
+    </div>
+    <!-- Link redirecting to the "about" page -->
+    <div class="mobile-about-link">
+      <h3><a href="about.html">ABOUT</a></h3>
+    </div>
+    <!-- Link redirecting to the "contact" page -->
+    <div class="mobile-contact-link">
+      <h3><a href="contact.html">CONTACT</a></h3>
+    </div>
+  </div>
+  <div class="background-img">
+    <!-- Logo of the website-->
+    <div class="logo">
+      <a class="logo-j" href="index.html">j</a>
+    </div>
+    <!-- Link redirecting to the "work" page -->
+    <div class="work-link">
+      <h3><a href="work.html">WORK</a></h3>
+    </div>
+    <!-- Social media icons -->
+    <div class="social-media-icons">
+      <a target="_blank" href="https://www.linkedin.com/in/jcordatauclair/"><i class="fab fa-linkedin"></i></a><br>
+      <a target="_blank" href="https://github.com/jcordatauclair"><i class="fab fa-github"></i></a><br>
+      <a target="_blank" href="https://dribbble.com/jcordatauclair"><i class="fab fa-dribbble"></i></a><br>
+      <a target="_blank" href="https://www.youtube.com/channel/UCEmwAvWTayy-B8eYByihLEw"><i class="fab fa-youtube"></i></a><br>
+      <a target="_blank" href="https://www.instagram.com/julek.ca"><i class="fab fa-instagram"></i></a><br>
+      <a target="_blank" href="https://open.spotify.com/user/julien.c-a?si=30e9vThZTFula8sv3SBMxA"><i class="fab fa-spotify"></i></a><br>
+    </div>
+    <!-- Link redirecting to the "contact" page -->
+    <div class="contact-link">
+      <h3><a target="_blank" class="vertical-text" href="mailto:jcordatauclair@gmail.com">CONTACT</a></h3>
+    </div>
+    <!-- Canvas -->
+    <canvas id="canvas"></canvas>
+    <!-- Chevrons to swap the background -->
+    <div class="chevrons">
+      <i class="fas fa-chevron-left prev-img"></i>
+      <i class="fas fa-chevron-right next-img"></i>
+    </div>
+    <!-- Copyright -->
+    <div class="copyright">
+      <p><small><i class="fas fa-copyright"></i> Julien Cordat-Auclair, 2019</small></p>
+    </div>
+    <!-- Link redirecting to the "about" page -->
+    <div class="about-link">
+      <h3><a class="vertical-text" href="#">ABOUT</a></h3>
+    </div>
+    <!-- Main text of the page -->
+    <div class="about-main-text">
+      <p>
+        I am a 22-year-old computer engineering student and am currently in my
+        5th and final year in Krakow under the Erasmus programme.
+        <br>
+        <br>
+        Always fascinated by the idea of imagining, creating and developing new
+        projects, IT appeared to be the most suitable field for me. That's why I decided to study it but
+        also to extend my knowledge beyond training by learning new computer
+        languages and carrying out personal projects. This allowed me to acquire
+        skills that I could not have obtained in school, such as web development,
+        a subject in which I learned on my own.
+        <br>
+        <br>
+        Beyond my interest in the computer field, I have always been very
+        interested in science, especially astronomy and geology. But above all, I
+        am passionate about the visual arts. Photography has been my first
+        passion since my childhood, and more recently, I've been trying to get
+        into the world of 3D modeling and visual effects. Needless to say, I would
+        dream of being able to link this passion with IT!
+      </p>
+    </div>
+    <!-- Burger menu -->
+    <div class="burger-menu-icon">
+      <i class="fas fa-bars open-menu-icon"></i>
+    </div>
+  </div>
+</body>
+
+</html>
